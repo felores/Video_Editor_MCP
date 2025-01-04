@@ -1,0 +1,21 @@
+[project]
+name = "video-editor"
+version = "0.1.0"
+description = "A video editing tool"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+ "httpx>=0.28.1",
+ "mcp[cli]>=1.1.0",
+ "python-dotenv>=1.0.1",
+]
+[[project.authors]]
+name = "Kush Agrawal"
+email = "kush36agrawal@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+video-editor = "video_editor:main"
